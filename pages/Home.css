@@ -1,0 +1,409 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+  background-color: #f7f7f7;
+}
+
+/* Main Text */
+.parpghe-title {
+  text-align: center;
+  font-size: 40px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 38px;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+/* Product Sections */
+.product-section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #111;
+  display: inline-block;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .parpghe-title {
+    font-size: 32px;
+  }
+
+  .home-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home {
+    padding: 25px 15px;
+  }
+
+  .parpghe-title {
+    font-size: 25px;
+  }
+
+  .home-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}/* Buttons */
+.buy-btn {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 15px;
+
+  background-color: #111;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.buy-btn:active {
+  transform: translateY(0);
+}
+.home,
+.product-section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.product-card {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  max-width: 100%;
+}.hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+  box-sizing: border-box;
+  background: #222;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/* Hero Video Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  margin: 10px auto 50px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 7%;
+  box-sizing: border-box;
+
+  background: #222;
+  color: white;
+
+  border-radius: 28px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.16);
+
+  isolation: isolate;
+}
+
+/* Background Video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: inherit;
+  transform: scale(1.01);
+
+  transition:
+    transform 0.8s ease,
+    filter 0.8s ease;
+
+  z-index: -2;
+}
+
+/* Dark Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.42) 48%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* Hover Effect */
+.hero:hover .hero-video {
+  transform: scale(1.06);
+  filter: brightness(1.08);
+}
+
+/* Text Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.hero-content h1 {
+  font-size: clamp(35px, 5vw, 60px);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  color: #f1f1f1;
+}
+
+/* Shop Button */
+.hero-button {
+  display: inline-block;
+
+  background: white;
+  color: #222;
+
+  padding: 15px 32px;
+  text-decoration: none;
+  font-weight: bold;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* الفيديو */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #222;
+  isolation: isolate;
+  cursor: pointer;
+}
+
+/* الفيديو يملأ المساحة */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transition: transform 0.7s ease;
+  z-index: -2;
+}
+
+/* طبقة التعتيم مخفية في البداية */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+/* الكلام مخفي في البداية */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  right: 7%;
+  transform: translateY(-40%);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    visibility 0.5s ease;
+  color: white;
+  max-width: 650px;
+}
+
+/* يظهر الكلام والفيديو يتكبر عند Hover */
+.hero:hover .hero-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%);
+}
+
+.hero:hover .hero-overlay {
+  opacity: 1;
+}
+
+.hero:hover .hero-video {
+  transform: scale(1.08);
+}
+
+/* تنسيق النص */
+.hero-content h1 {
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* الزر */
+.hero-button {
+  display: inline-block;
+  background: white;
+  color: #222;
+  padding: 14px 30px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #c8a97e;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 450px;
+    border-radius: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    height: 500px;
+    border-radius: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    height: 450px;
+    padding: 0 6%;
+    border-radius: 18px;
+    margin-top: 5px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .hero-button {
+    padding: 12px 24px;
+  }
+}
+
+
+
+
+
+
